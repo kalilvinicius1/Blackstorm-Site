@@ -1,0 +1,128 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background: #000;
+    padding: 1rem;
+
+}
+
+.title{
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 31.5px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.menu-bar{
+    overflow: hidden;
+    display: flex;
+    gap: 60px;
+}
+
+.menu-bar a{
+    font-size: 32px;
+    align-items: center;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn{
+    margin: 0;
+    background: none; 
+    border: none; 
+    outline: none;  
+    background-color: inherit;
+    font-family: inherit;
+    padding: 14px 16px;     
+}
+
+.dropbtn img{
+    display: block;  
+    width: 11.8px;     
+    height: auto;
+    transform: rotate(90deg);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0px 15px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    margin-top: 5px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    font-size: 28px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .nested-dropbtn{
+    margin: 0;
+    background: none; 
+    border: none; 
+    outline: none;  
+    background-color: inherit;
+    font-family: inherit;
+    padding: 14px 16px;     
+    transform: rotate(-90deg);
+}
+
+.nested-dropbtn img{
+    display: block;  
+    width: 11.8px;     
+    height: auto;
+}
+
+.nested-dropdown {
+    position: relative;
+  }
+  
+.nested-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    border: 2px solid #000;
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+  
+.nested-dropdown:hover .nested-dropdown-content {
+    display: block;
+}
+
+.search-btn{
+    float: right;
+    margin-left: auto;
+}
+
+.search-btn img{
+    width: 26.99px;
+    height: 28.98px;
+}
